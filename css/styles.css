@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  background-color: #f0eeee;
 }
 
 * {
@@ -27,6 +28,26 @@ input {
 
 ul {
   list-style: none;
+}
+
+.header-top {
+  background-color: #d4d2d2;
+}
+.header-top i {
+  color: #fe3419;
+}
+.header-top-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+.header-top-container span {
+  margin-right: 1rem;
+}
+.header-top-container i {
+  margin-right: 0.3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
