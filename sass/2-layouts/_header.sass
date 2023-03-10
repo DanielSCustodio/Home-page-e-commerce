@@ -16,6 +16,51 @@
 
       span
         margin-right: 1rem
+
+        &:last-of-type
+          margin-right: 0
       
       i
         margin-right: .3rem
+  
+  .main-header
+    &-container
+      @include layouts-mixins.center-content
+      padding: 1.3rem 0
+
+    a, i
+      color: variables.$title-color
+    
+    span
+      color: variables.$primary-color
+
+    #brand
+      font-weight: 900
+      font-size: 3rem
+
+      span
+        font-weight: 900
+        font-size: 3rem
+
+      i
+        font-size: 2.8rem
+
+    #search-form
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 50%
+
+      input
+        height: 40px
+
+      #search
+        width: 60%
+        padding: 1rem
+    
+    .header-actions-menu
+      display: flex
+      align-items: center
+
+      .wishlist-container, .header-cart-container
+        @include layouts-mixins.header-icon

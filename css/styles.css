@@ -41,13 +41,99 @@ ul {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.8rem 0;
 }
 .header-top-container span {
   margin-right: 1rem;
 }
+.header-top-container span:last-of-type {
+  margin-right: 0;
+}
 .header-top-container i {
   margin-right: 0.3rem;
+}
+.header .main-header-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 0;
+}
+.header .main-header a, .header .main-header i {
+  color: #111111;
+}
+.header .main-header span {
+  color: #fe3419;
+}
+.header .main-header #brand {
+  font-weight: 900;
+  font-size: 3rem;
+}
+.header .main-header #brand span {
+  font-weight: 900;
+  font-size: 3rem;
+}
+.header .main-header #brand i {
+  font-size: 2.8rem;
+}
+.header .main-header #search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.header .main-header #search-form input {
+  height: 40px;
+}
+.header .main-header #search-form #search {
+  width: 60%;
+  padding: 1rem;
+}
+.header .main-header .header-actions-menu {
+  display: flex;
+  align-items: center;
+}
+.header .main-header .header-actions-menu .wishlist-container, .header .main-header .header-actions-menu .header-cart-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 2.5rem;
+}
+.header .main-header .header-actions-menu .wishlist-container .qty, .header .main-header .header-actions-menu .header-cart-container .qty {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -10px;
+  right: 1px;
+  background-color: #fe3419;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: #f0eeee;
+}
+.header .main-header .header-actions-menu .wishlist-container i, .header .main-header .header-actions-menu .header-cart-container i {
+  margin-bottom: 0.3rem;
+}
+.header .main-header .header-actions-menu .wishlist-container a:hover, .header .main-header .header-actions-menu .header-cart-container a:hover {
+  color: #fe3419;
+}
+
+.btn {
+  background-color: #fe3419;
+  border: 1px solid #fe3419;
+  width: 20%;
+  color: #f0eeee;
+  position: relative;
+  transition: 1s;
+}
+.btn:hover {
+  cursor: pointer;
+  color: #fe3419;
+  background-color: #f0eeee;
 }
 
 /*# sourceMappingURL=styles.css.map */
