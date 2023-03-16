@@ -152,6 +152,7 @@ ul {
   justify-content: space-evenly;
   align-items: center;
   background-image: url("../../img/banner-main.png");
+  background-repeat: no-repeat;
 }
 .banner-main-content {
   max-width: 45%;
