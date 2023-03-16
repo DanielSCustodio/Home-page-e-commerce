@@ -5,7 +5,7 @@
 .header
 
   &-top
-    background-color: variables.$second-color
+    border-bottom: 1px solid variables.$second-color
 
     i
       color: variables.$primary-color
@@ -66,8 +66,8 @@
         @include layouts-mixins.header-icon
 
 .header-bottom
-  border-bottom: 3px solid variables.$second-color
-  border-top: 3px solid variables.$primary-color
+  border-bottom: 2px solid variables.$second-color
+  background-color: variables.$primary-color
 
   nav
     @include layouts-mixins.center-content
@@ -80,7 +80,8 @@
       a
         border-bottom: 2px solid transparent
         transition: 1s
+        color: variables.$bg-primary-color
 
         &:hover
-          color: variables.$primary-color
-          border-color: variables.$primary-color
+          color: variables.$bg-primary-color
+          border-color: variables.$bg-primary-color
