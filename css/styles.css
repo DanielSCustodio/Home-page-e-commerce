@@ -122,6 +122,76 @@ ul {
   color: #fe3419;
 }
 
+.header-bottom {
+  border-bottom: 3px solid #d4d2d2;
+  border-top: 3px solid #fe3419;
+}
+.header-bottom nav {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-bottom ul {
+  padding: 1.3rem 0;
+}
+.header-bottom ul li a {
+  border-bottom: 2px solid transparent;
+  transition: 1s;
+}
+.header-bottom ul li a:hover {
+  color: #fe3419;
+  border-color: #fe3419;
+}
+
+.banner-main {
+  display: flex;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../../img/banner-main.png");
+}
+.banner-main-content {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #f0eeee;
+}
+.banner-main-content h1 {
+  font-size: 5.2rem;
+  line-height: 6rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.banner-main-content p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.banner-main-content strong {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.banner-main-content strong span {
+  font-size: 5rem;
+  color: #fe3419;
+  font-weight: bold;
+}
+.banner-main-content input {
+  margin-top: 3rem;
+  width: 30%;
+  padding: 1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.banner-main-image {
+  margin-top: 8rem;
+}
+
 .btn {
   background-color: #fe3419;
   border: 1px solid #fe3419;

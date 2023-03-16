@@ -5,7 +5,7 @@
 .header
 
   &-top
-    background-color: variables.$bg-second-color
+    background-color: variables.$second-color
 
     i
       color: variables.$primary-color
@@ -19,10 +19,10 @@
 
         &:last-of-type
           margin-right: 0
-      
+
       i
         margin-right: .3rem
-  
+
   .main-header
     &-container
       @include layouts-mixins.center-content
@@ -30,7 +30,7 @@
 
     a, i
       color: variables.$title-color
-    
+
     span
       color: variables.$primary-color
 
@@ -57,10 +57,30 @@
       #search
         width: 60%
         padding: 1rem
-    
+
     .header-actions-menu
       display: flex
       align-items: center
 
       .wishlist-container, .header-cart-container
         @include layouts-mixins.header-icon
+
+.header-bottom
+  border-bottom: 3px solid variables.$second-color
+  border-top: 3px solid variables.$primary-color
+
+  nav
+    @include layouts-mixins.center-content
+    justify-content: space-between
+
+  ul
+    padding: 1.3rem 0
+
+    li
+      a
+        border-bottom: 2px solid transparent
+        transition: 1s
+
+        &:hover
+          color: variables.$primary-color
+          border-color: variables.$primary-color
