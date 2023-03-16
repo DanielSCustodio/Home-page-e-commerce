@@ -31,7 +31,7 @@ ul {
 }
 
 .header-top {
-  background-color: #d4d2d2;
+  border-bottom: 1px solid #dad8d8;
 }
 .header-top i {
   color: #fe3419;
@@ -123,8 +123,8 @@ ul {
 }
 
 .header-bottom {
-  border-bottom: 3px solid #d4d2d2;
-  border-top: 3px solid #fe3419;
+  border-bottom: 2px solid #dad8d8;
+  background-color: #fe3419;
 }
 .header-bottom nav {
   max-width: 1170px;
@@ -140,10 +140,11 @@ ul {
 .header-bottom ul li a {
   border-bottom: 2px solid transparent;
   transition: 1s;
+  color: #f0eeee;
 }
 .header-bottom ul li a:hover {
-  color: #fe3419;
-  border-color: #fe3419;
+  color: #f0eeee;
+  border-color: #f0eeee;
 }
 
 .banner-main {
