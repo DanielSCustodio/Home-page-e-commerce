@@ -1,0 +1,14 @@
+@use '../1-base/variables'
+
+.btn
+  background-color: variables.$primary-color
+  border: 1px solid variables.$primary-color
+  width: 20%
+  color: variables.$bg-primary-color
+  position: relative
+  transition: 1s
+
+  &:hover
+    cursor: pointer
+    color: variables.$primary-color
+    background-color: variables.$bg-primary-color
