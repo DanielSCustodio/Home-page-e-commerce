@@ -1,2 +1,32 @@
 @use '../1-base/_variables'
-@use 'layouts-mixins'
+@use '../1-base/base-mixins'
+@use '_layouts-mixins'
+
+.banners
+  @include layouts-mixins.center-content
+  margin-top: 7rem
+
+  .banner
+    background-color: variables.$second-color
+    padding: 2rem
+    -webkit-transform: skew(-20deg)
+    margin-right: 1.5rem
+
+    &-content
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+      h2, i
+        -webkit-transform: skew(20deg)
+
+      i
+        color:  variables.$primary-color
+        margin-right: 1.5rem
+        font-size: 1.8rem
+
+      h2
+        font-weight: 400
+        font-size: 1.2rem
+
+        
