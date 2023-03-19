@@ -1,7 +1,5 @@
 @use '../1-base/variables'
 @use '../1-base/_base-mixins'
-@use '_layouts-mixins'
-
 
 .banner-main
   display: flex
@@ -12,7 +10,7 @@
   background-repeat: no-repeat
 
   &-content
-    max-width: 45%
+    max-width: 40%
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -35,9 +33,11 @@
       font-weight: 300
 
       span
-        font-size: 5rem
+        font-size: 5.5rem
         color: variables.$primary-color
         font-weight: bold
+        -webkit-text-stroke-width: 1px
+        -webkit-text-stroke-color: #ffffff42
 
     input
       margin-top: 3rem
