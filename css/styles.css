@@ -246,4 +246,21 @@ ul {
   background-color: #f0eeee;
 }
 
+.subtitle {
+  text-transform: uppercase;
+  color: #fe3419;
+  font-size: 1rem;
+}
+
+.title {
+  text-transform: capitalize;
+  color: #111111;
+  font-size: 2.857rem;
+  line-height: 3.571rem;
+}
+
+.title, .subtitle {
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=styles.css.map */
