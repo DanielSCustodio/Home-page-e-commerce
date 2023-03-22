@@ -31,7 +31,7 @@ ul {
 }
 
 .header-top {
-  border-bottom: 1px solid #dad8d8;
+  border-bottom: 1px solid rgba(222, 222, 222, 0.6705882353);
 }
 .header-top i {
   color: #fe3419;
@@ -88,7 +88,7 @@ ul {
   height: 40px;
 }
 .header .main-header #search-form input::-webkit-input-placeholder {
-  color: rgba(230, 83, 100, 0.3843137255);
+  color: rgba(230, 83, 100, 0.2274509804);
 }
 .header .main-header #search-form #search {
   width: 60%;
@@ -127,7 +127,7 @@ ul {
 }
 
 .header-bottom {
-  border-bottom: 2px solid #dad8d8;
+  border-bottom: 2px solid rgba(222, 222, 222, 0.6705882353);
   background-color: #fe3419;
 }
 .header-bottom nav {
@@ -160,7 +160,7 @@ ul {
   margin-top: 7rem;
 }
 .banners .banner {
-  background-color: #dad8d8;
+  background-color: rgba(222, 222, 222, 0.6705882353);
   padding: 2rem;
   -webkit-transform: skew(-20deg);
   margin-right: 1.5rem;
