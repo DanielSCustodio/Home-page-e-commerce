@@ -250,6 +250,7 @@ ul {
   text-transform: uppercase;
   color: #fe3419;
   font-size: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .title {
@@ -260,7 +261,7 @@ ul {
 }
 
 .title, .subtitle {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */
