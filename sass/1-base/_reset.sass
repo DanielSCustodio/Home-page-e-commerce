@@ -1,8 +1,19 @@
 @use 'variables'
 
+body::-webkit-scrollbar
+  width: 8px
+
+body::-webkit-scrollbar-track
+  background: variables.$text-light-color
+
+body::-webkit-scrollbar-thumb
+  background-color: variables.$primary-color
+  border-radius: 50px
+
 html
   font-size: 14px
   background-color: variables.$bg-primary-color
+  scroll-behavior: smooth
 
 *
   padding: 0

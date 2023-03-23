@@ -1,6 +1,20 @@
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #666666;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fe3419;
+  border-radius: 50px;
+}
+
 html {
   font-size: 14px;
   background-color: #f0eeee;
+  scroll-behavior: smooth;
 }
 
 * {
