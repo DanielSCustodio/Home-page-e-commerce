@@ -1,3 +1,12 @@
 @use '../1-base/variables'
 @use '../1-base/_base-mixins'
 @use '_layouts-mixins'
+
+.products-grid
+  @include layouts-mixins.center-content
+  flex-direction: column 
+
+  &-container
+    display: flex
+    justify-content: space-between
+    padding: 2rem 0
