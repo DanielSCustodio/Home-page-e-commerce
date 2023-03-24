@@ -2,7 +2,7 @@
 @use '../1-base/_base-mixins'
 @use '_layouts-mixins'
 
-.battery
+.battery-fire-resistant
   @include layouts-mixins.center-content
   display: flex
   justify-content:  space-between
@@ -13,3 +13,10 @@
     display: flex
     flex-direction: column
     justify-content: space-between
+
+.reverse
+  flex-direction: row-reverse
+
+  .battery-fire-resistant-text
+    margin-right: 3rem
+    padding-right: 3rem

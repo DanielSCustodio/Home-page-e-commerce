@@ -268,7 +268,7 @@ ul {
   padding: 2rem 0;
 }
 
-.battery {
+.battery-fire-resistant {
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
@@ -278,12 +278,20 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-.battery-text {
+.battery-fire-resistant-text {
   margin-left: 3rem;
   padding-left: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+.reverse .battery-fire-resistant-text {
+  margin-right: 3rem;
+  padding-right: 3rem;
 }
 
 .btn {
