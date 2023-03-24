@@ -1,0 +1,22 @@
+@use '../1-base/variables'
+@use '../1-base/_base-mixins'
+@use '_layouts-mixins'
+
+.battery-fire-resistant
+  @include layouts-mixins.center-content
+  display: flex
+  justify-content:  space-between
+
+  &-text
+    margin-left: 3rem
+    padding-left: 3rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.reverse
+  flex-direction: row-reverse
+
+  .battery-fire-resistant-text
+    margin-right: 3rem
+    padding-right: 3rem
