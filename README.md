@@ -1,4 +1,4 @@
-# Homepage e-commerce
+# Home Page e-commerce
 Home page de um e-commerce utilizando arquitetura de SASS.
 
 ## Instalação do SASS
