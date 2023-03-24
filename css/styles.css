@@ -290,8 +290,91 @@ ul {
   flex-direction: row-reverse;
 }
 .reverse .battery-fire-resistant-text {
+  margin-left: 0;
+  padding-left: 0;
   margin-right: 3rem;
   padding-right: 3rem;
+}
+
+.bass-colors {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7rem;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 400px;
+}
+.bass-colors::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: #AD3617;
+  transform: skew(0deg, -6deg);
+}
+.bass-colors::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: #AD3617;
+  transform: skew(0deg, 6deg);
+}
+.bass-colors-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 2rem;
+  z-index: 1;
+}
+.bass-colors-container-image {
+  margin-top: -7rem;
+}
+.bass-colors-container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+.bass-colors-container-text h3, .bass-colors-container-text h2, .bass-colors-container-text p {
+  color: #f0eeee;
+}
+.bass-colors-container-text h2 {
+  text-align: left;
+}
+
+.reverse {
+  margin-top: 6rem;
+}
+.reverse::before {
+  background: #111111;
+}
+.reverse::after {
+  background: #111111;
+}
+.reverse-container {
+  flex-direction: row-reverse;
+}
+.reverse-container .bass-colors-container-text {
+  margin-left: 0;
+  margin-left: 1rem;
+  margin-top: 2rem;
 }
 
 .btn {
@@ -401,6 +484,7 @@ ul {
   color: #454545;
   font-size: 1.15rem;
   line-height: 1.714rem;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=styles.css.map */

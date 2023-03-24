@@ -1,0 +1,74 @@
+@use '../1-base/variables'
+@use '../1-base/_base-mixins'
+@use '_layouts-mixins'
+
+.bass-colors
+  @include layouts-mixins.center-content
+  position: relative
+  text-align: center
+  padding: 12px
+  margin-bottom: 6px
+  height: 400px
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 50%
+    background: #AD3617
+    transform: skew(0deg, -6deg)
+
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    width: 50%
+    background: #AD3617
+    transform: skew(0deg, 6deg)
+
+  &-container
+    @include layouts-mixins.center-content
+    display: flex
+    justify-content: center
+    align-items: stretch
+    padding: 2rem
+    z-index: 1
+
+    &-image
+      margin-top: -7rem
+
+    &-text
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      margin-top: 2rem
+      margin-left: 5rem
+
+      h3,h2,p
+        color: variables.$bg-primary-color
+
+      h2
+        text-align: left
+
+.reverse
+  &::before
+    background: variables.$title-color
+
+  &::after
+    background: variables.$title-color
+  
+  margin-top: 6rem
+
+  &-container
+    flex-direction: row-reverse
+
+    .bass-colors-container-text
+      margin-left: 0
+      margin-left: 1rem
+      margin-top: 2rem
+
+
