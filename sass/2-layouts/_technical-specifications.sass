@@ -17,33 +17,45 @@
       width: 45%
       display: flex
       flex-direction: column
-      margin-right: 3rem
       border-bottom: 1px solid #cecccce3
-      margin-bottom: 5rem
-
-      &:last-of-type
-          margin-right: 0
 
       a
         display: flex
         justify-content: space-between
+        align-items: center
         margin-bottom: 1rem
         color: variables.$primary-color
 
         h4
           font-size: 1.286rem
-          margin: 0
         
         i
-          font-size: 1.5rem
+          font-size: 1.7rem
 
       ul
-        color: variables.$text-light-color
+        color: variables.$text-dark-color
         list-style-type: disc
         margin-left: 0.9rem
 
         li
           margin-bottom: 1rem
           padding-left: 1rem
+
+    .especifications-closed
+      display: flex
+      justify-content: space-between
+      width: 45%
+      border-bottom: 1px solid #cecccce3
+      padding: 2rem 0
+
+      &:hover
+        i
+          color: variables.$primary-color
+
+      h4
+        font-size: 1.286rem
         
+      i
+        font-size: 1.7rem
+        color: variables.$text-light-color
 
