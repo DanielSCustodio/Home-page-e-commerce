@@ -236,11 +236,11 @@ ul {
   font-weight: 300;
 }
 .banner-main-content strong span {
-  font-size: 5.5rem;
+  font-size: 7rem;
   color: #fe3419;
   font-weight: bold;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.2588235294);
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.4980392157);
 }
 .banner-main-content input {
   margin-top: 3rem;
@@ -359,9 +359,6 @@ ul {
   text-align: left;
 }
 
-.reverse {
-  margin-top: 6rem;
-}
 .reverse::before {
   background: #111111;
 }
@@ -373,8 +370,57 @@ ul {
 }
 .reverse-container .bass-colors-container-text {
   margin-left: 0;
-  margin-left: 1rem;
-  margin-top: 2rem;
+  margin-right: 1rem;
+}
+
+.technical-especifications {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+.technical-especifications-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.technical-especifications-container .especifications-open {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+  border-bottom: 1px solid rgba(206, 204, 204, 0.8901960784);
+  margin-bottom: 5rem;
+}
+.technical-especifications-container .especifications-open:last-of-type {
+  margin-right: 0;
+}
+.technical-especifications-container .especifications-open a {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: #fe3419;
+}
+.technical-especifications-container .especifications-open a h4 {
+  font-size: 1.286rem;
+  margin: 0;
+}
+.technical-especifications-container .especifications-open a i {
+  font-size: 1.5rem;
+}
+.technical-especifications-container .especifications-open ul {
+  color: #666666;
+  list-style-type: disc;
+  margin-left: 0.9rem;
+}
+.technical-especifications-container .especifications-open ul li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 .btn {
@@ -404,7 +450,7 @@ ul {
   color: #111111;
   font-size: 3.3rem;
   line-height: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-weight: 600;
 }
 
