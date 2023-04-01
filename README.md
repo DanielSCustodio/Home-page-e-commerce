@@ -10,7 +10,7 @@ Caso queira fazer alguma alteração via SASS.
 > Rode em seu terminal: ```sass --watch sass/app.sass:css/styles.css```
 
 ## Rodando o projeto
-> Abra o projeto em seu servidor local.<br/>
-ou<br/>
-> Utilize a extensão ``Live Server`` em seu editor de código.
+> Abra o projeto em seu servidor local
+
+> Ou utilize a extensão ``Live Server`` em seu editor de código.
 
