@@ -15,6 +15,7 @@ html {
   font-size: 14px;
   background-color: #f0eeee;
   scroll-behavior: smooth;
+  color: #111111;
 }
 
 * {
@@ -276,7 +277,6 @@ ul {
   align-items: center;
   margin-top: 7rem;
   display: flex;
-  justify-content: space-between;
 }
 .battery-fire-resistant-text {
   margin-left: 3rem;
@@ -504,7 +504,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5rem;
 }
 .testimonials-content i {
   font-size: 4rem;
@@ -549,11 +548,65 @@ ul {
 .testimonials .count-slide p {
   font-size: 1.5rem;
   font-weight: 300;
+  line-height: 0;
+  margin-top: 3rem;
 }
 .testimonials .count-slide p span {
   font-size: 4rem;
   font-weight: bold;
   color: #fe3419;
+}
+
+.special-features {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7rem;
+}
+.special-features-image img {
+  width: 100%;
+}
+.special-features-texts {
+  max-width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5rem;
+}
+.special-features-texts .special-features-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 3.5rem;
+}
+.special-features-texts .special-features-content-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-right: 4rem;
+  background-color: #fe3419;
+  -webkit-transform: skew(12deg);
+}
+.special-features-texts .special-features-content-image img {
+  -webkit-transform: skew(-12deg);
+  color: #f0eeee;
+  object-fit: contain;
+  min-width: 100%;
+}
+.special-features-texts .special-features-content-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.special-features-texts .special-features-content-texts h4 {
+  font-size: 2rem;
+}
+.special-features-texts .special-features-content-texts p {
+  color: #454545;
 }
 
 .btn {
