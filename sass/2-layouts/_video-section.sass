@@ -9,6 +9,7 @@
   .video-container-images
     display: flex
     flex-direction: column
+    align-content: stretch
     max-width: 50%
 
     .video-content
@@ -20,6 +21,7 @@
         width: 280px
         height: 140px
         object-fit: cover
+        margin: 0
 
   .video-container-video
     background-image: url('../../img/bg-video.jpg')
@@ -31,7 +33,7 @@
     display: flex
     justify-content: center
     align-items: center
-
+    
     i
       font-size: 7rem
       color: variables.$primary-color
