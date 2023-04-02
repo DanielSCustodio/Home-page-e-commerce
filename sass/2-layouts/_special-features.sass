@@ -1,0 +1,50 @@
+@use '../1-base/variables'
+@use '../1-base/_base-mixins'
+@use '_layouts-mixins'
+
+.special-features
+  @include layouts-mixins.center-content
+
+  &-image
+    img
+      width: 100%
+
+  &-texts
+    max-width: 55%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-left: 5rem
+
+    .special-features-content
+      display: flex
+      justify-content: space-between
+      align-items: stretch
+      margin-bottom: 3.5rem
+
+      &-image
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 1rem 2rem
+        margin-right: 4rem
+        background-color: variables.$primary-color
+        -webkit-transform: skew(12deg)
+
+        img
+          -webkit-transform: skew(-12deg)
+          color: variables.$bg-primary-color
+          object-fit: contain
+          min-width: 100%
+
+      &-texts
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        h4
+          font-size: 2rem
+
+        p
+          color: variables.$text-dark-color
