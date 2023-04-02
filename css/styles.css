@@ -284,16 +284,18 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 50%;
 }
 
 .reverse {
   flex-direction: row-reverse;
+  margin-top: 0;
 }
 .reverse .battery-fire-resistant-text {
   margin-left: 0;
   padding-left: 0;
-  margin-right: 3rem;
   padding-right: 3rem;
+  margin-left: 3rem;
 }
 
 .bass-colors {
@@ -609,6 +611,53 @@ ul {
   color: #454545;
 }
 
+.video-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7rem;
+  align-items: stretch;
+}
+.video-container .video-container-images {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+.video-container .video-container-images .video-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.video-container .video-container-images .video-content img {
+  width: 280px;
+  height: 140px;
+  object-fit: cover;
+}
+.video-container .video-container-video {
+  background-image: url("../../img/bg-video.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin-left: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-container .video-container-video i {
+  font-size: 7rem;
+  color: #fe3419;
+  background-color: #f0eeee;
+  border-radius: 100%;
+  border: 5px dashed #f0eeee;
+  box-shadow: 1px 1px 25px white;
+}
+.video-container .video-container-video i:hover {
+  background-color: #9c9a9a;
+}
+
 .btn {
   background-color: #fe3419;
   border: 1px solid #fe3419;
@@ -670,8 +719,8 @@ ul {
   right: 1rem;
   padding: 2px 6px;
   border: 1px solid red;
-  padding: 0.5rem 1rem;
-  transition: 1.8s;
+  padding: 0.5rem 2.5rem;
+  transition: 1.5s;
 }
 .products-grid-card .shop i {
   color: #fe3419;

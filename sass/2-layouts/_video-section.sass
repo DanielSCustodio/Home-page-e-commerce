@@ -1,0 +1,47 @@
+@use '../1-base/variables'
+@use '../1-base/_base-mixins'
+@use '_layouts-mixins'
+
+.video-container
+  @include layouts-mixins.center-content
+  align-items: stretch
+
+  .video-container-images
+    display: flex
+    flex-direction: column
+    max-width: 50%
+
+    .video-content
+      display: flex
+      flex-wrap: wrap
+      gap: 1.5rem
+
+      img
+        width: 280px
+        height: 140px
+        object-fit: cover
+
+  .video-container-video
+    background-image: url('../../img/bg-video.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    width: 100%
+    margin-left: 1.5rem
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+
+    i
+      font-size: 7rem
+      color: variables.$primary-color
+      background-color: variables.$bg-primary-color
+      border-radius: 100%
+      border: 5px dashed variables.$bg-primary-color
+      box-shadow: 1px 1px 25px white
+
+      &:hover
+        background-color: variables.$text-light-color
+
+  
+
