@@ -1,0 +1,100 @@
+@use '../1-base/variables'
+@use '../1-base/_base-mixins'
+@use '_layouts-mixins'
+
+.footer
+  margin-top: 10rem
+  background: variables.$title-color
+
+  &-content
+    padding-top: 5rem
+    color: variables.$bg-primary-color
+    @include layouts-mixins.center-content
+    display: flex
+
+    .first
+      max-width: 35%
+
+    &-item
+      display: flex
+      flex-direction: column
+      justify-content: baseline
+      margin-right: 1rem
+      height: 150px
+
+      a
+        color: variables.$text-light-color
+        text-transform: capitalize
+
+      h3
+        font-size: 1.2rem
+        text-transform: capitalize
+
+      p
+        margin: 1rem 0
+        color: variables.$text-light-color
+
+      li
+        margin-top: 1rem
+
+        a
+
+          &:hover
+            color: variables.$primary-color
+
+      .info
+        display: flex
+        align-items: center
+
+        i
+          margin-right: 1rem
+          font-size: 1.5rem
+          color: variables.$primary-color
+
+        p
+          margin: 0
+
+      &:last-of-type
+        margin-right: 0
+
+      #brand
+        display: flex
+        align-items: center
+
+        h4, span, i
+          font-size: 2.5rem
+
+          display: flex
+        h4
+          color: variables.$bg-primary-color
+
+          span
+            color: variables.$primary-color
+
+        i
+          color: variables.$bg-primary-color
+          margin-left: 1rem
+
+        &:hover
+          color: none
+
+  &-copyright
+    color: variables.$bg-primary-color
+    @include layouts-mixins.center-content
+
+    background-color: #272727
+    padding: 1.3rem 1rem
+    box-shadow: 1px 1px 10px #141313
+
+
+    div
+      i
+        padding: 1rem
+        background-color: #121212
+        color: variables.$bg-primary-color
+
+        &:hover
+          color: variables.$primary-color
+          cursor: pointer
+
+    

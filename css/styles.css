@@ -751,6 +751,107 @@ ul {
   padding: 1rem;
 }
 
+.footer {
+  margin-top: 10rem;
+  background: #111111;
+}
+.footer-content {
+  padding-top: 5rem;
+  color: #f0eeee;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+  display: flex;
+}
+.footer-content .first {
+  max-width: 35%;
+}
+.footer-content-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  margin-right: 1rem;
+  height: 150px;
+}
+.footer-content-item a {
+  color: #9c9a9a;
+  text-transform: capitalize;
+}
+.footer-content-item h3 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.footer-content-item p {
+  margin: 1rem 0;
+  color: #9c9a9a;
+}
+.footer-content-item li {
+  margin-top: 1rem;
+}
+.footer-content-item li a:hover {
+  color: #fe3419;
+}
+.footer-content-item .info {
+  display: flex;
+  align-items: center;
+}
+.footer-content-item .info i {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #fe3419;
+}
+.footer-content-item .info p {
+  margin: 0;
+}
+.footer-content-item:last-of-type {
+  margin-right: 0;
+}
+.footer-content-item #brand {
+  display: flex;
+  align-items: center;
+}
+.footer-content-item #brand h4, .footer-content-item #brand span, .footer-content-item #brand i {
+  font-size: 2.5rem;
+  display: flex;
+}
+.footer-content-item #brand h4 {
+  color: #f0eeee;
+}
+.footer-content-item #brand h4 span {
+  color: #fe3419;
+}
+.footer-content-item #brand i {
+  color: #f0eeee;
+  margin-left: 1rem;
+}
+.footer-content-item #brand:hover {
+  color: none;
+}
+.footer-copyright {
+  color: #f0eeee;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+  background-color: #272727;
+  padding: 1.3rem 1rem;
+  box-shadow: 1px 1px 10px #141313;
+}
+.footer-copyright div i {
+  padding: 1rem;
+  background-color: #121212;
+  color: #f0eeee;
+}
+.footer-copyright div i:hover {
+  color: #fe3419;
+  cursor: pointer;
+}
+
 .btn {
   background-color: #fe3419;
   border: 1px solid #fe3419;
