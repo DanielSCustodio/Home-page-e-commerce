@@ -1,0 +1,55 @@
+@use '../1-base/variables'
+@use '../1-base/_base-mixins'
+@use '_layouts-mixins'
+
+.contact-container
+  overflow: hidden
+
+.contact
+  @include layouts-mixins.center-content
+  justify-content: center
+  max-width: 100%
+  background-color: variables.$second-color
+  -webkit-transform: skew(50deg)
+  padding-top: 5rem
+  box-shadow: 10px 1px 05px variables.$text-light-color
+
+  h2, h3
+    text-align: center
+
+  &-form
+    -webkit-transform: skew(-50deg)
+    display: flex
+    flex-direction: column
+    max-width: 50%
+
+    .form
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      gap: 1rem
+
+      input, textarea
+        box-shadow: 1px 1px 3px variables.$text-light-color
+
+      input[type="text"]
+        padding: 1.2rem
+        margin-top: 1.5rem
+        width: 48%
+
+        &:focus
+          outline: solid variables.$text-light-color
+
+      textarea
+        width: 100%
+        margin-top: 2rem
+        padding: 1.2rem
+        border: 0
+
+        &:focus
+          outline: solid variables.$text-light-color
+
+      input[type="submit"]
+        margin-top: 3rem
+        width: 30%
+        padding: 1rem
