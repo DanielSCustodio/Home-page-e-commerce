@@ -9,7 +9,7 @@ Rode em seu terminal: ```sudo npm install -g sass```
 Caso queira fazer alguma alteração via SASS.
 > Rode em seu terminal: ```sass --watch sass/app.sass:css/styles.css```
 
-## Rodando o projeto
+## Executando o projeto
 > Abra o projeto em seu servidor local
 
 > Ou utilize a extensão ``Live Server`` em seu editor de código.
