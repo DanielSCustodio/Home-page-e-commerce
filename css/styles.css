@@ -261,7 +261,7 @@ ul {
     margin-top: 5rem;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: stretch;
     gap: 2rem;
   }
@@ -276,12 +276,7 @@ ul {
   .banners .banner {
     -webkit-transform: skew(0deg);
     margin-right: 0;
-    width: 45%;
-  }
-}
-@media (max-width: 720px) {
-  .banners .banner {
-    width: 90%;
+    width: 100%;
   }
 }
 .banners .banner-content {
@@ -342,10 +337,10 @@ ul {
     flex-direction: column;
     background-image: url("../../img/banner-mobile.png");
     background-repeat: no-repeat;
-    padding: 2.5rem;
     color: #f0eeee;
     margin: 0 auto;
     height: 780px;
+    width: 100%;
   }
 }
 @media (max-width: 720px) {
@@ -357,6 +352,9 @@ ul {
 }
 @media (max-width: 912px) {
   .banner-mobile-content {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -397,10 +395,9 @@ ul {
     justify-content: center;
   }
   .banner-mobile-content h1 {
-    font-size: 3rem;
-    line-height: 3.2rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
     margin-bottom: 2rem;
-    margin-top: 5rem;
   }
   .banner-mobile-content p {
     font-size: 1rem;
@@ -482,10 +479,25 @@ ul {
   margin-top: 10rem;
   flex-direction: column;
 }
+@media (max-width: 912px) {
+  .products-grid {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+}
 .products-grid-container {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
+}
+@media (max-width: 912px) {
+  .products-grid-container {
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 }
 
 .battery-fire-resistant {
@@ -1093,6 +1105,17 @@ ul {
   margin-bottom: 0.8rem;
   font-weight: 800;
 }
+@media (max-width: 912px) {
+  .subtitle {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 720px) {
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
 
 .title {
   text-transform: capitalize;
@@ -1102,22 +1125,47 @@ ul {
   margin-bottom: 3rem;
   font-weight: 600;
 }
+@media (max-width: 912px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 720px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
 
 .products-grid-card {
   border-top: 1px solid rgba(222, 222, 222, 0.5568627451);
   border-bottom: 1px solid rgba(222, 222, 222, 0.5568627451);
   position: relative;
   width: 20%;
+  height: auto;
   padding-bottom: 1rem;
   transition: 1s;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: stretch;
+}
+@media (max-width: 912px) {
+  .products-grid-card {
+    width: 45%;
+    margin-bottom: 2rem;
+    border-bottom: 0;
+  }
 }
 .products-grid-card:hover {
   border-left: 0;
   border-top: 1px solid #fe3419;
   border-bottom: 1px solid #fe3419;
+}
+@media (max-width: 912px) {
+  .products-grid-card:hover {
+    border-bottom: 0;
+  }
 }
 .products-grid-card .label {
   text-transform: uppercase;
@@ -1131,13 +1179,37 @@ ul {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  padding: 2px 6px;
   border: 1px solid #fe3419;
   padding: 0.5rem 2.5rem;
   transition: 1.5s;
 }
+@media (max-width: 912px) {
+  .products-grid-card .shop {
+    padding: 1rem 2.5rem;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 720px) {
+  .products-grid-card .shop {
+    padding: 0.5rem 2.5rem;
+  }
+}
 .products-grid-card .shop i {
   color: #fe3419;
+}
+@media (max-width: 912px) {
+  .products-grid-card .shop i {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 720px) {
+  .products-grid-card .shop i {
+    font-size: 1.5rem;
+  }
 }
 .products-grid-card .shop:hover {
   box-shadow: inset 200px 0 0 0 #fe3419;
@@ -1165,10 +1237,32 @@ ul {
   font-weight: 500;
   color: #111111;
 }
+@media (max-width: 912px) {
+  .products-name {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 720px) {
+  .products-name {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
 
 .products-price {
   font-size: 1.5rem;
   color: #454545;
+}
+@media (max-width: 912px) {
+  .products-price {
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 720px) {
+  .products-price {
+    margin-bottom: 3rem;
+  }
 }
 
 .rating-box {

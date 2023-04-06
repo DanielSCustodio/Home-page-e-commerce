@@ -1,5 +1,6 @@
 @use '../1-base/variables'
 @use '../1-base/_base-mixins'
+@use 'layouts-mixins'
 
 .banner-mobile
   display: none
@@ -10,10 +11,10 @@
     flex-direction: column
     background-image: url('../../img/banner-mobile.png')
     background-repeat: no-repeat
-    padding: 2.5rem
     color: variables.$bg-primary-color
     margin: 0 auto
     height: 780px
+    width: 100%
 
   @include base-mixins.mobile-smartphone
     background-image: url('../../img/banner-smartphone.png')
@@ -22,6 +23,7 @@
 
   &-content
     @include base-mixins.mobile-tablet
+      @include layouts-mixins.center-content-mobile
       display: flex
       flex-direction: column
       justify-content: space-around
@@ -60,10 +62,9 @@
       justify-content: center
 
       h1
-        font-size: 3rem
-        line-height: 3.2rem
+        font-size: 3.5rem
+        line-height: 3.5rem
         margin-bottom: 2rem
-        margin-top: 5rem
 
       p
         font-size: 1rem
