@@ -5,6 +5,10 @@
 .special-features
   @include layouts-mixins.center-content
 
+  @include base-mixins.mobile-tablet
+    @include layouts-mixins.center-content-mobile
+    flex-direction: column
+
   &-image
     img
       width: 100%
@@ -17,11 +21,26 @@
     justify-content: space-between
     margin-left: 5rem
 
+    @include base-mixins.mobile-tablet
+      flex-wrap: wrap
+      max-width: 100%
+      margin-left: 0
+
     .special-features-content
       display: flex
       justify-content: space-between
       align-items: stretch
       margin-bottom: 3.5rem
+
+      @include base-mixins.mobile-tablet
+        margin-bottom: 3rem
+
+        &:last-of-type
+          margin-bottom: 0
+
+        &
+      @include base-mixins.mobile-smartphone
+        flex-direction: column
 
       &-image
         display: flex
@@ -31,6 +50,12 @@
         margin-right: 4rem
         background-color: variables.$primary-color
         -webkit-transform: skew(12deg)
+
+        @include base-mixins.mobile-tablet
+          margin-left: 1rem
+
+        @include base-mixins.mobile-smartphone
+          max-width: 120px
 
         img
           -webkit-transform: skew(-12deg)
@@ -45,6 +70,12 @@
 
         h4
           font-size: 2rem
+
+          @include base-mixins.mobile-tablet
+            font-size: 1.5rem
+
+          @include base-mixins.mobile-smartphone
+            margin-top: 1rem
 
         p
           color: variables.$text-dark-color
