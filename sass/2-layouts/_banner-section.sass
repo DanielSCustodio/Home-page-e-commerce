@@ -8,9 +8,13 @@
     @include layouts-mixins.center-content-mobile
     flex-direction: row
     flex-wrap: wrap
-    justify-content: center
-    align-items: stretch
-    gap: 2rem
+    justify-content: space-between
+    align-items: center
+    gap: 4.5rem
+
+  @include base-mixins.mobile-smartphone
+    gap: 1rem
+
 
   .banner
     background-color: variables.$second-color
@@ -22,12 +26,10 @@
       -webkit-transform: skew(0deg)
       margin-right: 0
       width: 45%
-    
+
     @include base-mixins.mobile-smartphone
-      width: 90%
-      -webkit-transform: skew(-20deg)
-
-
+      width: 100%
+      
 
     &-content
       display: flex
@@ -43,10 +45,6 @@
         @include base-mixins.mobile-tablet
           -webkit-transform: skew(0deg)
 
-        @include base-mixins.mobile-smartphone
-          -webkit-transform: skew(20deg)
-        
-
       i
         color: variables.$primary-color
         margin-right: 1.5rem
@@ -55,9 +53,15 @@
         @include base-mixins.mobile-tablet
           font-size: 3rem
 
+        @include base-mixins.mobile-smartphone
+          font-size: 2rem
+
       h2
         font-weight: 400
         font-size: 1.2rem
 
         @include base-mixins.mobile-tablet
           font-size: 1.5rem
+
+        @include base-mixins.mobile-smartphone
+          font-size: 1rem

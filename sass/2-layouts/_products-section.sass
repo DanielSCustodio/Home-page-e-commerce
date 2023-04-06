@@ -6,8 +6,18 @@
   @include layouts-mixins.center-content
   flex-direction: column 
 
+  @include base-mixins.mobile-tablet
+    @include layouts-mixins.center-content-mobile
+
   &-container
     display: flex
     justify-content: space-between
     padding: 2rem 0
+
+    @include base-mixins.mobile-tablet
+      justify-content: center
+      align-items: stretch
+      flex-wrap: wrap
+      gap: 2rem
+
 

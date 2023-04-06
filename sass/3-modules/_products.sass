@@ -1,21 +1,32 @@
 @use '../1-base/_variables'
 @use '../1-base/_base-mixins'
+@use '../2-layouts/_layouts-mixins'
 
 .products-grid-card
   border-top: 1px solid variables.$second-color
   border-bottom: 1px solid variables.$second-color
   position: relative
   width: 20%
+  height: auto
   padding-bottom: 1rem
   transition: 1s
   display: flex
   flex-direction: column
   justify-content: center
+  align-items: stretch
+
+  @include base-mixins.mobile-tablet
+    width: 45%
+    margin-bottom: 2rem
+    border-bottom: 0
 
   &:hover
     border-left: 0
     border-top: 1px solid variables.$primary-color
     border-bottom: 1px solid variables.$primary-color
+
+    @include base-mixins.mobile-tablet
+      border-bottom: 0
 
   .label
     text-transform: uppercase
@@ -29,13 +40,29 @@
     position: absolute
     bottom: 1rem
     right: 1rem
-    padding: 2px 6px
     border: 1px solid variables.$primary-color
     padding: 0.5rem 2.5rem
     transition: 1.5s
 
+    @include base-mixins.mobile-tablet
+      padding: 1rem 2.5rem
+      bottom: 0
+      left: 0
+      display: flex
+      justify-content: center
+      margin-bottom: 1rem
+
+    @include base-mixins.mobile-smartphone
+      padding: 0.5rem 2.5rem
+
     i
       color: variables.$primary-color
+
+      @include base-mixins.mobile-tablet
+        font-size: 1.8rem
+
+      @include base-mixins.mobile-smartphone
+        font-size: 1.5rem
 
     &:hover
       box-shadow: inset 200px 0 0 0 variables.$primary-color
@@ -61,9 +88,23 @@
   font-weight: 500
   color: variables.$title-color
 
+  @include base-mixins.mobile-tablet
+    font-size: 1.3rem
+
+  @include base-mixins.mobile-smartphone
+    font-size: 1rem
+    line-height: 1.2rem
+
 .products-price
   font-size: 1.5rem
   color: variables.$text-dark-color
+
+  @include base-mixins.mobile-tablet
+    margin-bottom: 5rem
+    font-size: 1.8rem
+
+  @include base-mixins.mobile-smartphone
+    margin-bottom: 3rem
 
 .rating-box
   color: #f89021
