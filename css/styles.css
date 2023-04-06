@@ -723,6 +723,13 @@ ul {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 912px) {
+  .technical-especifications {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+}
 .technical-especifications-container {
   display: flex;
   justify-content: space-between;
@@ -734,6 +741,13 @@ ul {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid rgba(206, 204, 204, 0.8901960784);
+  justify-content: space-between;
+}
+@media (max-width: 912px) {
+  .technical-especifications-container .especifications-open {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 .technical-especifications-container .especifications-open a {
   display: flex;
@@ -744,6 +758,16 @@ ul {
 }
 .technical-especifications-container .especifications-open a h4 {
   font-size: 1.286rem;
+}
+@media (max-width: 912px) {
+  .technical-especifications-container .especifications-open a h4 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 720px) {
+  .technical-especifications-container .especifications-open a h4 {
+    font-size: 1.2rem;
+  }
 }
 .technical-especifications-container .especifications-open a i {
   font-size: 1.7rem;
@@ -757,6 +781,16 @@ ul {
   margin-bottom: 1rem;
   padding-left: 1rem;
 }
+@media (max-width: 912px) {
+  .technical-especifications-container .especifications-open ul li {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 720px) {
+  .technical-especifications-container .especifications-open ul li {
+    font-size: 1rem;
+  }
+}
 .technical-especifications-container .especifications-closed {
   display: flex;
   justify-content: space-between;
@@ -764,11 +798,26 @@ ul {
   border-bottom: 1px solid rgba(206, 204, 204, 0.8901960784);
   padding: 2rem 0;
 }
+@media (max-width: 912px) {
+  .technical-especifications-container .especifications-closed {
+    width: 100%;
+  }
+}
 .technical-especifications-container .especifications-closed:hover i {
   color: #fe3419;
 }
 .technical-especifications-container .especifications-closed h4 {
   font-size: 1.286rem;
+}
+@media (max-width: 912px) {
+  .technical-especifications-container .especifications-closed h4 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 720px) {
+  .technical-especifications-container .especifications-closed h4 {
+    font-size: 1.2rem;
+  }
 }
 .technical-especifications-container .especifications-closed i {
   font-size: 1.7rem;
