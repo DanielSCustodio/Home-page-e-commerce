@@ -1,6 +1,83 @@
 @use '../1-base/variables'
 @use '../1-base/_base-mixins'
 
+
+.banner-mobile
+  display: none
+
+  @include base-mixins.mobile-tablet
+    display: flex
+    flex-direction: column
+    background-image: url('../../img/banner-mobile.png')
+    background-repeat: no-repeat
+    padding: 2.5rem
+    color: variables.$bg-primary-color
+    margin: 0 auto
+    height: 780px
+
+  @include base-mixins.mobile-smartphone
+    background-image: url('../../img/banner-smartphone.png')
+    padding: 1.5rem
+    height: auto
+
+  &-content
+    @include base-mixins.mobile-tablet
+      display: flex
+      flex-direction: column
+      justify-content: center
+      width: 100%
+      height: 100%
+
+      h1
+        font-size: 5.5rem
+        line-height: 5rem
+        margin-bottom: 3rem
+        text-transform: capitalize
+
+      p
+        font-size: 1.5rem
+        margin-bottom: 5rem
+
+      strong
+        font-size: 1.5rem
+
+        span
+          color: variables.$primary-color
+          font-size: 5.5rem
+          -webkit-text-stroke-width: 1px
+          -webkit-text-stroke-color: #ffffff7f
+
+      input
+        margin-top: 3rem
+        height: 60px
+        width: 40%
+        text-transform: capitalize
+        font-weight: bold
+        padding: 1rem
+        font-size: 1.5rem
+
+    @include base-mixins.mobile-smartphone
+      h1
+        font-size: 4rem
+        line-height: 4.2rem
+        margin: 1rem 0
+      
+      p
+        font-size: 1rem
+        margin-bottom: 1rem
+        font-weight: 600
+
+      strong
+        span
+          font-size: 4rem
+      
+      input
+        padding: 0
+        height: 50px
+        font-size: 1rem
+        width: 60%
+        margin-bottom: 1rem
+
 .banner-main
   display: flex
   height: 100vh
@@ -8,6 +85,10 @@
   align-items: center
   background-image: url('../../img/banner-main.png')
   background-repeat: no-repeat
+
+  @include base-mixins.mobile-tablet
+    display: none
+
 
   &-content
     max-width: 40%
