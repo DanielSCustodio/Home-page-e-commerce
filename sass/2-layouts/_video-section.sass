@@ -6,22 +6,39 @@
   @include layouts-mixins.center-content
   align-items: stretch
 
+  @include base-mixins.mobile-tablet
+    @include layouts-mixins.center-content-mobile
+    flex-direction: column
+
+
   .video-container-images
     display: flex
     flex-direction: column
     align-content: stretch
     max-width: 50%
 
+    @include base-mixins.mobile-tablet
+      max-width: 100%
+
+    @include base-mixins.mobile-smartphone
+      display: none
+    
+
     .video-content
       display: flex
       flex-wrap: wrap
       gap: 1.5rem
+
+      @include base-mixins.mobile-tablet
+        justify-content: space-between
 
       img
         width: 280px
         height: 140px
         object-fit: cover
         margin: 0
+
+
 
   .video-container-video
     background-image: url('../../img/bg-video.jpg')
@@ -33,6 +50,11 @@
     display: flex
     justify-content: center
     align-items: center
+
+    @include base-mixins.mobile-tablet
+      height: 500px
+      margin-left: 0
+
     
     i
       font-size: 7rem
@@ -45,5 +67,8 @@
       &:hover
         background-color: variables.$text-light-color
 
-  
+.title-mobile
+  display: none
 
+  @include base-mixins.mobile-smartphone
+    display: flex
