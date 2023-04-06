@@ -6,7 +6,6 @@
 
   @include base-mixins.mobile-tablet
 
-
   &-top
     border-bottom: 1px solid variables.$second-color
 
@@ -32,6 +31,7 @@
 
       i
         margin-right: .3rem
+  
 
   .main-header
     
@@ -74,11 +74,7 @@
 
       @include base-mixins.mobile-tablet
         width: 100%
-        margin: 2rem 0
-
-      @include base-mixins.mobile-smartphone
-        width: 100%
-        margin: 2rem 0
+        margin: 1rem 0
 
       input
         height: 40px
@@ -88,7 +84,7 @@
 
       #search
         width: 60%
-        padding: 1rem
+        padding: 1.2rem
         caret-color: variables.$primary-color
 
     .header-actions-menu
@@ -100,14 +96,12 @@
 
         @include base-mixins.mobile-tablet
           margin-left:  0
-          margin: 1.5rem
+          margin: 1rem
 
           i
             font-size: 2rem
 
         @include base-mixins.mobile-smartphone
-          margin-left:  0
-
           i
             font-size: 1.2rem
 
@@ -116,7 +110,7 @@
           margin-left: 3rem
 
         @include base-mixins.mobile-smartphone
-          margin-left: 1.5rem
+          margin-left: 1rem
 
 
 .header-bottom
