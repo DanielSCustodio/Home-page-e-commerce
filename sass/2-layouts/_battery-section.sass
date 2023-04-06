@@ -6,20 +6,61 @@
   @include layouts-mixins.center-content
   display: flex
 
+  @include base-mixins.mobile-tablet
+    @include layouts-mixins.center-content-mobile
+    overflow: hidden
+
+    h2
+      font-size: 2rem
+      line-height: 2.3rem
+
+  @include base-mixins.mobile-smartphone
+    flex-direction: column
+  
+
   &-text
     margin-left: 3rem
     padding-left: 3rem
     display: flex
     flex-direction: column
     justify-content: space-between
-    max-width: 50%
+
+    @include base-mixins.mobile-smartphone
+      margin-left: 0
+      padding: 0
+
+
+  
+  div
+    width: 50%
+
+    @include base-mixins.mobile-smartphone
+      width: 100%
+
+
+    @include base-mixins.mobile-tablet
+
+    img
+      max-width: 100%
+
 
 .reverse
   flex-direction: row-reverse
   margin-top: 0
+
+  @include base-mixins.mobile-tablet
+    margin-top: 5rem
+
+  @include base-mixins.mobile-smartphone
+    flex-direction: column
+
 
   .battery-fire-resistant-text
     margin-left: 0
     padding-left: 0
     padding-right: 3rem
     margin-left: 3rem
+
+    @include base-mixins.mobile-smartphone
+      padding-right: 0
+      margin-left: 0

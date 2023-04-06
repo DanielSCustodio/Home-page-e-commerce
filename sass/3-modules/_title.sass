@@ -1,21 +1,19 @@
 @use '../1-base/variables'
 @use '../1-base/_base-mixins'
 
-  
 .subtitle
   text-transform: uppercase
-  color:  variables.$primary-color
+  color: variables.$primary-color
   font-size: 1rem
   margin-bottom: 0.8rem
   font-weight: 800
 
   @include base-mixins.mobile-tablet
     font-size: 1.3rem
-  
+
   @include base-mixins.mobile-smartphone
     font-size: 1rem
     margin-bottom: 0
-
 
 .title
   text-transform: capitalize
@@ -31,5 +29,3 @@
   @include base-mixins.mobile-smartphone
     font-size: 2rem
     margin-bottom: 1rem
-
-

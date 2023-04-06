@@ -2,7 +2,6 @@
 @use '../1-base/_base-mixins'
 @use '../2-layouts/_layouts-mixins'
 
-
 .products-grid-card
   border-top: 1px solid variables.$second-color
   border-bottom: 1px solid variables.$second-color
@@ -20,7 +19,6 @@
     width: 45%
     margin-bottom: 2rem
     border-bottom: 0
-
 
   &:hover
     border-left: 0
@@ -53,22 +51,18 @@
       display: flex
       justify-content: center
       margin-bottom: 1rem
-    
+
     @include base-mixins.mobile-smartphone
       padding: 0.5rem 2.5rem
-
-
 
     i
       color: variables.$primary-color
 
       @include base-mixins.mobile-tablet
         font-size: 1.8rem
-      
 
       @include base-mixins.mobile-smartphone
         font-size: 1.5rem
-
 
     &:hover
       box-shadow: inset 200px 0 0 0 variables.$primary-color
@@ -111,8 +105,6 @@
 
   @include base-mixins.mobile-smartphone
     margin-bottom: 3rem
-
-  
 
 .rating-box
   color: #f89021
