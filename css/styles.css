@@ -263,7 +263,12 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 4.5rem;
+  }
+}
+@media (max-width: 720px) {
+  .banners {
+    gap: 1rem;
   }
 }
 .banners .banner {
@@ -596,6 +601,12 @@ ul {
   margin-bottom: 6px;
   height: 400px;
 }
+@media (max-width: 912px) {
+  .bass-colors {
+    height: auto;
+    padding: 1rem;
+  }
+}
 .bass-colors::before {
   content: "";
   position: absolute;
@@ -629,8 +640,24 @@ ul {
   padding: 2rem;
   z-index: 1;
 }
+@media (max-width: 912px) {
+  .bass-colors-container {
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+    padding-bottom: 3rem;
+  }
+}
 .bass-colors-container-image {
   margin-top: -7rem;
+}
+@media (max-width: 912px) {
+  .bass-colors-container-image {
+    margin-top: 0;
+  }
+  .bass-colors-container-image img {
+    width: 100%;
+  }
 }
 .bass-colors-container-text {
   display: flex;
@@ -639,11 +666,32 @@ ul {
   margin-top: -2rem;
   margin-left: 5rem;
 }
+@media (max-width: 912px) {
+  .bass-colors-container-text {
+    margin: 0;
+  }
+}
 .bass-colors-container-text h3, .bass-colors-container-text h2, .bass-colors-container-text p {
   color: #f0eeee;
 }
 .bass-colors-container-text h2 {
   text-align: left;
+}
+@media (max-width: 912px) {
+  .bass-colors-container-text h2 {
+    line-height: 3rem;
+  }
+}
+@media (max-width: 720px) {
+  .bass-colors-container-text h2 {
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 912px) {
+  .bass-colors-container-text p {
+    text-align: left;
+  }
 }
 
 .reverse::before {
@@ -654,6 +702,11 @@ ul {
 }
 .reverse-container {
   flex-direction: row-reverse;
+}
+@media (max-width: 912px) {
+  .reverse-container {
+    flex-direction: column;
+  }
 }
 .reverse-container .bass-colors-container-text {
   margin-left: 0;
