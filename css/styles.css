@@ -292,7 +292,7 @@ ul {
   .banner-mobile {
     background-image: url("../../img/banner-smartphone.png");
     padding: 1.5rem;
-    height: auto;
+    height: 100vh;
   }
 }
 @media (max-width: 912px) {
