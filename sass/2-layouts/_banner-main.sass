@@ -1,7 +1,6 @@
 @use '../1-base/variables'
 @use '../1-base/_base-mixins'
 
-
 .banner-mobile
   display: none
 
@@ -18,7 +17,7 @@
   @include base-mixins.mobile-smartphone
     background-image: url('../../img/banner-smartphone.png')
     padding: 2rem
-    height: 100vh
+    height: 100%
 
   &-content
     @include base-mixins.mobile-tablet
@@ -64,7 +63,7 @@
         line-height: 4.2rem
         margin-bottom: 1rem
         margin-top: 40%
-      
+
       p
         font-size: 1rem
         margin-bottom: 1rem
@@ -73,15 +72,12 @@
       strong
         span
           font-size: 4rem
-      
+
       input
         padding: 0
         height: 50px
         font-size: 1rem
         width: 60%
-
-
-    
 
 .banner-main
   display: flex
@@ -93,7 +89,6 @@
 
   @include base-mixins.mobile-tablet
     display: none
-
 
   &-content
     max-width: 40%
@@ -134,4 +129,3 @@
 
   &-image
     margin-top: 8rem
-

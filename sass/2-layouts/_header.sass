@@ -10,14 +10,15 @@
     border-bottom: 1px solid variables.$second-color
 
     @include base-mixins.mobile-tablet
-      padding: 2rem
+      max-width: 90%
+      margin: 0 auto
 
     @include base-mixins.mobile-smartphone
-        display: none
+      display: none
 
     i
       color: variables.$primary-color
-    
+
     &-container
       @include layouts-mixins.center-content
       padding: .8rem 0
@@ -31,10 +32,9 @@
 
       i
         margin-right: .3rem
-  
 
   .main-header
-    
+
     &-container
       @include layouts-mixins.center-content
       padding: 1.3rem 0
@@ -95,7 +95,7 @@
         @include layouts-mixins.header-icon
 
         @include base-mixins.mobile-tablet
-          margin-left:  0
+          margin-left: 0
           margin: 1rem
 
           i
@@ -112,7 +112,6 @@
         @include base-mixins.mobile-smartphone
           margin-left: 1rem
 
-
 .header-bottom
   border-bottom: 2px solid variables.$second-color
   background-color: variables.$primary-color
@@ -122,18 +121,20 @@
     justify-content: space-between
     margin-top: 0
 
-
     @include base-mixins.mobile-tablet
+      max-width: 90%
+      margin: 0 auto
+      
       ul
-          padding: 2rem
-          
-          li
-            a
-              font-size: 1rem
+        padding: 2rem
+
+        li
+          a
+            font-size: 1rem
     @include base-mixins.mobile-smartphone
       ul
         padding: 1rem
-        
+
         li
           a
             font-size: 0.8rem

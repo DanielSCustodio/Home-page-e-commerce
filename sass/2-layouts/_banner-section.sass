@@ -4,6 +4,13 @@
 
 .banners
   @include layouts-mixins.center-content
+  @include base-mixins.mobile-tablet
+    @include layouts-mixins.center-content-mobile
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: stretch
+    gap: 2rem
 
   .banner
     background-color: variables.$second-color
@@ -11,21 +18,46 @@
     -webkit-transform: skew(-20deg)
     margin-right: 1.5rem
 
+    @include base-mixins.mobile-tablet
+      -webkit-transform: skew(0deg)
+      margin-right: 0
+      width: 45%
+    
+    @include base-mixins.mobile-smartphone
+      width: 90%
+      -webkit-transform: skew(-20deg)
+
+
+
     &-content
       display: flex
       justify-content: space-between
       align-items: center
 
+      @include base-mixins.mobile-tablet
+        justify-content: flex-start
+
       h2, i
         -webkit-transform: skew(20deg)
 
+        @include base-mixins.mobile-tablet
+          -webkit-transform: skew(0deg)
+
+        @include base-mixins.mobile-smartphone
+          -webkit-transform: skew(20deg)
+        
+
       i
-        color:  variables.$primary-color
+        color: variables.$primary-color
         margin-right: 1.5rem
         font-size: 1.8rem
+
+        @include base-mixins.mobile-tablet
+          font-size: 3rem
 
       h2
         font-weight: 400
         font-size: 1.2rem
 
-        
+        @include base-mixins.mobile-tablet
+          font-size: 1.5rem
