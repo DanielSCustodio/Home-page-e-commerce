@@ -50,7 +50,8 @@ ul {
 }
 @media (max-width: 912px) {
   .header-top {
-    padding: 2rem;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 720px) {
@@ -213,6 +214,10 @@ ul {
   margin-top: 0;
 }
 @media (max-width: 912px) {
+  .header-bottom nav {
+    max-width: 90%;
+    margin: 0 auto;
+  }
   .header-bottom nav ul {
     padding: 2rem;
   }
@@ -249,28 +254,78 @@ ul {
   align-items: center;
   margin-top: 10rem;
 }
+@media (max-width: 912px) {
+  .banners {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+  }
+}
 .banners .banner {
   background-color: rgba(222, 222, 222, 0.5568627451);
   padding: 2rem;
   -webkit-transform: skew(-20deg);
   margin-right: 1.5rem;
 }
+@media (max-width: 912px) {
+  .banners .banner {
+    -webkit-transform: skew(0deg);
+    margin-right: 0;
+    width: 45%;
+  }
+}
+@media (max-width: 720px) {
+  .banners .banner {
+    width: 90%;
+    -webkit-transform: skew(-20deg);
+  }
+}
 .banners .banner-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 912px) {
+  .banners .banner-content {
+    justify-content: flex-start;
+  }
+}
 .banners .banner-content h2, .banners .banner-content i {
   -webkit-transform: skew(20deg);
+}
+@media (max-width: 912px) {
+  .banners .banner-content h2, .banners .banner-content i {
+    -webkit-transform: skew(0deg);
+  }
+}
+@media (max-width: 720px) {
+  .banners .banner-content h2, .banners .banner-content i {
+    -webkit-transform: skew(20deg);
+  }
 }
 .banners .banner-content i {
   color: #fe3419;
   margin-right: 1.5rem;
   font-size: 1.8rem;
 }
+@media (max-width: 912px) {
+  .banners .banner-content i {
+    font-size: 3rem;
+  }
+}
 .banners .banner-content h2 {
   font-weight: 400;
   font-size: 1.2rem;
+}
+@media (max-width: 912px) {
+  .banners .banner-content h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .banner-mobile {
@@ -292,7 +347,7 @@ ul {
   .banner-mobile {
     background-image: url("../../img/banner-smartphone.png");
     padding: 2rem;
-    height: 100vh;
+    height: 100%;
   }
 }
 @media (max-width: 912px) {
