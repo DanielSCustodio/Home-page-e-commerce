@@ -834,6 +834,11 @@ ul {
   margin-top: 10rem;
   display: flex;
 }
+@media (max-width: 912px) {
+  .second-banner {
+    margin-top: 5rem;
+  }
+}
 .second-banner-content {
   max-width: 1170px;
   margin: 0 auto;
@@ -844,8 +849,25 @@ ul {
   margin: 0 auto;
   width: 100%;
 }
+@media (max-width: 912px) {
+  .second-banner-content {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 0;
+  }
+}
 .second-banner-content img {
   max-width: 500px;
+}
+@media (max-width: 912px) {
+  .second-banner-content img {
+    width: 100%;
+  }
 }
 .second-banner-content-text {
   display: flex;
@@ -854,11 +876,28 @@ ul {
   margin-left: 2rem;
   color: #f0eeee;
 }
+@media (max-width: 912px) {
+  .second-banner-content-text {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+}
 .second-banner-content-text h2 {
   color: #f0eeee;
 }
+@media (max-width: 720px) {
+  .second-banner-content-text h2 {
+    line-height: 2.5rem;
+    margin-top: 1rem;
+  }
+}
 .second-banner-content-text p {
   font-size: 1.571rem;
+}
+@media (max-width: 720px) {
+  .second-banner-content-text p {
+    font-size: 1rem;
+  }
 }
 .second-banner-content-text .icons {
   display: flex;
@@ -866,11 +905,33 @@ ul {
   margin-top: 3rem;
   width: 100%;
 }
+@media (max-width: 912px) {
+  .second-banner-content-text .icons {
+    flex-wrap: wrap;
+  }
+}
 .second-banner-content-text .icons-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 50%;
+}
+@media (max-width: 912px) {
+  .second-banner-content-text .icons-item {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .second-banner-content-text .icons-item span, .second-banner-content-text .icons-item i {
+    font-size: 1.5rem;
+  }
+  .second-banner-content-text .icons-item span:last-of-type, .second-banner-content-text .icons-item i:last-of-type {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 720px) {
+  .second-banner-content-text .icons-item span {
+    font-size: 1rem;
+  }
 }
 .second-banner-content-text .icons-item i {
   font-size: 2rem;
