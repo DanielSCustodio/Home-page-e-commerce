@@ -526,10 +526,6 @@ ul {
     margin-top: 5rem;
     overflow: hidden;
   }
-  .battery-fire-resistant h2 {
-    font-size: 2rem;
-    line-height: 2.3rem;
-  }
 }
 @media (max-width: 720px) {
   .battery-fire-resistant {
@@ -677,14 +673,8 @@ ul {
 .bass-colors-container-text h2 {
   text-align: left;
 }
-@media (max-width: 912px) {
-  .bass-colors-container-text h2 {
-    line-height: 3rem;
-  }
-}
 @media (max-width: 720px) {
   .bass-colors-container-text h2 {
-    line-height: 2rem;
     margin-top: 1rem;
   }
 }
@@ -723,6 +713,13 @@ ul {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 912px) {
+  .technical-especifications {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+}
 .technical-especifications-container {
   display: flex;
   justify-content: space-between;
@@ -734,6 +731,13 @@ ul {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid rgba(206, 204, 204, 0.8901960784);
+  justify-content: space-between;
+}
+@media (max-width: 912px) {
+  .technical-especifications-container .especifications-open {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 .technical-especifications-container .especifications-open a {
   display: flex;
@@ -744,6 +748,16 @@ ul {
 }
 .technical-especifications-container .especifications-open a h4 {
   font-size: 1.286rem;
+}
+@media (max-width: 912px) {
+  .technical-especifications-container .especifications-open a h4 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 720px) {
+  .technical-especifications-container .especifications-open a h4 {
+    font-size: 1.2rem;
+  }
 }
 .technical-especifications-container .especifications-open a i {
   font-size: 1.7rem;
@@ -757,6 +771,16 @@ ul {
   margin-bottom: 1rem;
   padding-left: 1rem;
 }
+@media (max-width: 912px) {
+  .technical-especifications-container .especifications-open ul li {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 720px) {
+  .technical-especifications-container .especifications-open ul li {
+    font-size: 1rem;
+  }
+}
 .technical-especifications-container .especifications-closed {
   display: flex;
   justify-content: space-between;
@@ -764,11 +788,26 @@ ul {
   border-bottom: 1px solid rgba(206, 204, 204, 0.8901960784);
   padding: 2rem 0;
 }
+@media (max-width: 912px) {
+  .technical-especifications-container .especifications-closed {
+    width: 100%;
+  }
+}
 .technical-especifications-container .especifications-closed:hover i {
   color: #fe3419;
 }
 .technical-especifications-container .especifications-closed h4 {
   font-size: 1.286rem;
+}
+@media (max-width: 912px) {
+  .technical-especifications-container .especifications-closed h4 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 720px) {
+  .technical-especifications-container .especifications-closed h4 {
+    font-size: 1.2rem;
+  }
 }
 .technical-especifications-container .especifications-closed i {
   font-size: 1.7rem;
@@ -785,6 +824,11 @@ ul {
   margin-top: 10rem;
   display: flex;
 }
+@media (max-width: 912px) {
+  .second-banner {
+    margin-top: 5rem;
+  }
+}
 .second-banner-content {
   max-width: 1170px;
   margin: 0 auto;
@@ -795,8 +839,25 @@ ul {
   margin: 0 auto;
   width: 100%;
 }
+@media (max-width: 912px) {
+  .second-banner-content {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 0;
+  }
+}
 .second-banner-content img {
   max-width: 500px;
+}
+@media (max-width: 912px) {
+  .second-banner-content img {
+    width: 100%;
+  }
 }
 .second-banner-content-text {
   display: flex;
@@ -805,11 +866,28 @@ ul {
   margin-left: 2rem;
   color: #f0eeee;
 }
+@media (max-width: 912px) {
+  .second-banner-content-text {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+}
 .second-banner-content-text h2 {
   color: #f0eeee;
 }
+@media (max-width: 720px) {
+  .second-banner-content-text h2 {
+    line-height: 2.5rem;
+    margin-top: 1rem;
+  }
+}
 .second-banner-content-text p {
   font-size: 1.571rem;
+}
+@media (max-width: 720px) {
+  .second-banner-content-text p {
+    font-size: 1rem;
+  }
 }
 .second-banner-content-text .icons {
   display: flex;
@@ -817,11 +895,33 @@ ul {
   margin-top: 3rem;
   width: 100%;
 }
+@media (max-width: 912px) {
+  .second-banner-content-text .icons {
+    flex-wrap: wrap;
+  }
+}
 .second-banner-content-text .icons-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 50%;
+}
+@media (max-width: 912px) {
+  .second-banner-content-text .icons-item {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .second-banner-content-text .icons-item span, .second-banner-content-text .icons-item i {
+    font-size: 1.5rem;
+  }
+  .second-banner-content-text .icons-item span:last-of-type, .second-banner-content-text .icons-item i:last-of-type {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 720px) {
+  .second-banner-content-text .icons-item span {
+    font-size: 1rem;
+  }
 }
 .second-banner-content-text .icons-item i {
   font-size: 2rem;
@@ -836,8 +936,20 @@ ul {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+@media (max-width: 912px) {
+  .testimonials {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+}
 .testimonials h2, .testimonials h3 {
   text-align: center;
+}
+@media (max-width: 912px) {
+  .testimonials #testimonial-01, .testimonials #testimonial-02 {
+    display: none;
+  }
 }
 .testimonials-content {
   display: flex;
@@ -847,6 +959,11 @@ ul {
 .testimonials-content i {
   font-size: 4rem;
   color: #9c9a9a;
+}
+@media (max-width: 720px) {
+  .testimonials-content i {
+    font-size: 2rem;
+  }
 }
 .testimonials-content i:hover {
   background-color: rgba(246, 21, 21, 0.8235294118);
@@ -859,10 +976,35 @@ ul {
   border: 1px solid #9c9a9a;
   text-align: center;
 }
+@media (max-width: 912px) {
+  .testimonials-content-item {
+    max-width: 90%;
+    margin: 0 2rem;
+  }
+}
+@media (max-width: 720px) {
+  .testimonials-content-item {
+    max-width: 100%;
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+}
 .testimonials-content-item p {
   color: #454545;
   text-align: left;
   line-height: 1.5rem;
+}
+@media (max-width: 912px) {
+  .testimonials-content-item p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 720px) {
+  .testimonials-content-item p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
 }
 .testimonials-content-item span {
   color: #9c9a9a;
@@ -1220,7 +1362,7 @@ ul {
 @media (max-width: 720px) {
   .subtitle {
     font-size: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 }
 
@@ -1240,7 +1382,8 @@ ul {
 @media (max-width: 720px) {
   .title {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    line-height: 2.2rem;
+    margin-bottom: 2rem;
   }
 }
 

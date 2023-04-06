@@ -10,10 +10,16 @@
   margin-left: 1rem
   margin-right: 1rem
 
+  @include base-mixins.mobile-tablet
+    @include layouts-mixins.center-content-mobile
+
   h2, h3
     text-align: center
 
-  
+  #testimonial-01, #testimonial-02
+    @include base-mixins.mobile-tablet
+      display: none
+
   &-content
     display: flex
     justify-content: space-between
@@ -23,11 +29,13 @@
       font-size: 4rem
       color: variables.$text-light-color
 
+      @include base-mixins.mobile-smartphone
+        font-size: 2rem
+
       &:hover
         background-color: #f61515d2
         border-radius: 50%
         cursor: pointer
-
 
     &-item
       max-width: 29%
@@ -35,10 +43,27 @@
       border: 1px solid variables.$text-light-color
       text-align: center
 
+      @include base-mixins.mobile-tablet
+        max-width: 90%
+        margin: 0 2rem
+
+      @include base-mixins.mobile-smartphone
+        max-width: 100%
+        margin: 0 1rem
+        padding: 1rem
+
       p
         color: variables.$text-dark-color
         text-align: left
         line-height: 1.5rem
+
+        @include base-mixins.mobile-tablet
+          font-size: 1.6rem
+          line-height: 2rem
+
+        @include base-mixins.mobile-smartphone
+          font-size: 1rem
+          line-height: 1.3rem
 
       span
         color: variables.$text-light-color
