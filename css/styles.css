@@ -526,10 +526,6 @@ ul {
     margin-top: 5rem;
     overflow: hidden;
   }
-  .battery-fire-resistant h2 {
-    font-size: 2rem;
-    line-height: 2.3rem;
-  }
 }
 @media (max-width: 720px) {
   .battery-fire-resistant {
@@ -677,14 +673,8 @@ ul {
 .bass-colors-container-text h2 {
   text-align: left;
 }
-@media (max-width: 912px) {
-  .bass-colors-container-text h2 {
-    line-height: 3rem;
-  }
-}
 @media (max-width: 720px) {
   .bass-colors-container-text h2 {
-    line-height: 2rem;
     margin-top: 1rem;
   }
 }
@@ -946,8 +936,20 @@ ul {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+@media (max-width: 912px) {
+  .testimonials {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+}
 .testimonials h2, .testimonials h3 {
   text-align: center;
+}
+@media (max-width: 912px) {
+  .testimonials #testimonial-01, .testimonials #testimonial-02 {
+    display: none;
+  }
 }
 .testimonials-content {
   display: flex;
@@ -957,6 +959,11 @@ ul {
 .testimonials-content i {
   font-size: 4rem;
   color: #9c9a9a;
+}
+@media (max-width: 720px) {
+  .testimonials-content i {
+    font-size: 2rem;
+  }
 }
 .testimonials-content i:hover {
   background-color: rgba(246, 21, 21, 0.8235294118);
@@ -969,10 +976,35 @@ ul {
   border: 1px solid #9c9a9a;
   text-align: center;
 }
+@media (max-width: 912px) {
+  .testimonials-content-item {
+    max-width: 90%;
+    margin: 0 2rem;
+  }
+}
+@media (max-width: 720px) {
+  .testimonials-content-item {
+    max-width: 100%;
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+}
 .testimonials-content-item p {
   color: #454545;
   text-align: left;
   line-height: 1.5rem;
+}
+@media (max-width: 912px) {
+  .testimonials-content-item p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 720px) {
+  .testimonials-content-item p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
 }
 .testimonials-content-item span {
   color: #9c9a9a;
@@ -1330,7 +1362,7 @@ ul {
 @media (max-width: 720px) {
   .subtitle {
     font-size: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 }
 
@@ -1350,7 +1382,8 @@ ul {
 @media (max-width: 720px) {
   .title {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    line-height: 2.2rem;
+    margin-bottom: 2rem;
   }
 }
 
