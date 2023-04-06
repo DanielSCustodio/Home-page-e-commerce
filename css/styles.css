@@ -291,7 +291,7 @@ ul {
 @media (max-width: 720px) {
   .banner-mobile {
     background-image: url("../../img/banner-smartphone.png");
-    padding: 1.5rem;
+    padding: 2rem;
     height: 100vh;
   }
 }
@@ -333,10 +333,14 @@ ul {
   }
 }
 @media (max-width: 720px) {
+  .banner-mobile-content {
+    justify-content: flex-start;
+  }
   .banner-mobile-content h1 {
     font-size: 4rem;
     line-height: 4.2rem;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
+    margin-top: 40%;
   }
   .banner-mobile-content p {
     font-size: 1rem;
@@ -351,7 +355,6 @@ ul {
     height: 50px;
     font-size: 1rem;
     width: 60%;
-    margin-bottom: 1rem;
   }
 }
 
