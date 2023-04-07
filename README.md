@@ -1,4 +1,6 @@
 # Home Page e-commerce
+![sass](https://user-images.githubusercontent.com/29557187/230655144-2e86801d-cfe2-4223-8ad7-22fdceb7f57f.png)
+
 Home page de um e-commerce utilizando arquitetura SASS.
 
 ## Instalação do SASS
