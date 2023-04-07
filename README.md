@@ -1,5 +1,5 @@
 # Home Page e-commerce
-Home page de um e-commerce utilizando arquitetura de SASS.
+Home page de um e-commerce utilizando arquitetura SASS.
 
 ## Instalação do SASS
 > É necessário ter o ``Node`` instalado em sua máquina.<br>
