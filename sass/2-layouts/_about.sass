@@ -6,9 +6,23 @@
   @include layouts-mixins.center-content
   align-items: stretch
 
+  @include base-mixins.mobile-tablet
+    @include layouts-mixins.center-content-mobile
+    flex-direction: column-reverse
+    align-items: center
+    margin-top: 0
+
+    h2, h3
+      text-align: center
+
   &-image
     img
       max-width: 100%
+      @include base-mixins.mobile-tablet
+        display: none
+
+      @include base-mixins.mobile-smartphone
+        display: flex
 
   &-texts
     max-width: 50%
@@ -16,18 +30,27 @@
     flex-direction: column
     justify-content: space-between
 
+    @include base-mixins.mobile-tablet
+      max-width: 100%
+
     h4
       font-size: 2rem
       line-height: 2.5rem
-    
+
+      @include base-mixins.mobile-tablet
+        margin: 1rem 0
+
     p, h4
       color: variables.$text-dark-color
       text-align: justify
-    
+
+    p
+      @include base-mixins.mobile-tablet
+      margin-bottom: 1rem
+
     .about-texts-images
       display: flex
       justify-content: space-between
 
       img
         max-width: 30%
-
