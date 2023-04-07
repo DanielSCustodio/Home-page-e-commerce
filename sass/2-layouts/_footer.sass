@@ -6,14 +6,35 @@
   margin-top: 10rem
   background: variables.$title-color
 
+  @include base-mixins.mobile-tablet
+    margin-top: 5rem
+
+
   &-content
     padding-top: 5rem
     color: variables.$bg-primary-color
     @include layouts-mixins.center-content
     display: flex
 
+    @include base-mixins.mobile-tablet
+      @include layouts-mixins.center-content-mobile
+      flex-wrap: wrap
+      padding-top: 2rem
+    
+    @include base-mixins.mobile-smartphone
+      flex-direction: column
+      align-items: flex-start
+
     .first
       max-width: 35%
+
+      @include base-mixins.mobile-tablet
+        max-width: 100%
+        margin-bottom: 3rem
+      
+      @include base-mixins.mobile-smartphone
+        width: 100%
+
 
     &-item
       display: flex
@@ -21,6 +42,11 @@
       justify-content: baseline
       margin-right: 1rem
       height: 150px
+
+      @include base-mixins.mobile-smartphone
+        margin-right: 0
+        margin-top: 2rem
+        height: auto
 
       a
         color: variables.$text-light-color
@@ -82,10 +108,20 @@
     color: variables.$bg-primary-color
     @include layouts-mixins.center-content
 
+    @include base-mixins.mobile-tablet
+      p
+        font-size: 1rem
+
+    @include base-mixins.mobile-smartphone
+      display: flex
+      flex-wrap: wrap
+      p
+        font-size: 0.5rem
+
+
     background-color: #272727
     padding: 1.3rem 1rem
     box-shadow: 1px 1px 10px #141313
-
 
     div
       i
@@ -96,5 +132,3 @@
         &:hover
           color: variables.$primary-color
           cursor: pointer
-
-    

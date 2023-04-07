@@ -13,6 +13,10 @@
   -webkit-transform: skew(50deg)
   padding-top: 5rem
   box-shadow: 10px 1px 05px variables.$text-light-color
+  border-left: 1px solid variables.$primary-color
+
+  @include base-mixins.mobile-tablet
+    padding-top: 0
 
   h2, h3
     text-align: center
@@ -23,11 +27,21 @@
     flex-direction: column
     max-width: 50%
 
+    @include base-mixins.mobile-tablet
+      max-width: 100%
+      margin: 0 auto
+      justify-content: center
+      align-items: center
+
     .form
       display: flex
       flex-wrap: wrap
       justify-content: space-between
       gap: 1rem
+
+      @include base-mixins.mobile-tablet
+        justify-content: center
+        align-items: center
 
       input, textarea
         box-shadow: 1px 1px 3px variables.$text-light-color
@@ -36,6 +50,9 @@
         padding: 1.2rem
         margin-top: 1.5rem
         width: 48%
+
+        @include base-mixins.mobile-tablet
+          width: 90%
 
         &:focus
           outline: solid variables.$text-light-color
@@ -46,6 +63,9 @@
         padding: 1.2rem
         border: 0
 
+        @include base-mixins.mobile-tablet
+          width: 90%
+
         &:focus
           outline: solid variables.$text-light-color
 
@@ -53,4 +73,3 @@
         margin-top: 3rem
         width: 30%
         padding: 1rem
-
