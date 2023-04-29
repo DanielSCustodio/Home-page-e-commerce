@@ -5,7 +5,7 @@ Home page de um e-commerce utilizando arquitetura SASS.
 ## Deploy
 > https://home-page-e-commerce.vercel.app/
 
-## Instalação do SASS
+## Instalação SASS
 > É necessário ter o ``Node`` instalado em sua máquina.<br>
 Rode em seu terminal: ```sudo npm install -g sass```
 
