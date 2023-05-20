@@ -11,7 +11,7 @@ Rode em seu terminal: ```sudo npm install -g sass```
 
 ## Build
 Caso queira fazer alguma alteração via SASS.
-> Rode em seu terminal: ```sass --watch sass/app.sass:css/styles.css```
+> Execute em seu terminal: ```sass --watch sass/app.sass:css/styles.css```
 
 ## Executando o projeto
 > Abra o projeto em seu servidor local
